@@ -21,14 +21,17 @@
   body{margin:0; background:var(--paper); color:var(--ink); font-family:'IBM Plex Sans',sans-serif;
     font-size:17px; line-height:1.6; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);}
   a{color:inherit;}
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 clamp(24px,5vw,64px);}
+
+  /* Updated .wrap with generous, responsive left and right padding */
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 clamp(32px, 6vw, 64px);}
+
   .serif{font-family:'Fraunces',serif;}
   .band{width:100%;}
   .band-dim{background:var(--paper-dim);}
   .band-ink{background:var(--ink); color:var(--paper);}
 
   header.top{border-bottom:1px solid var(--line); padding:16px 0; position:sticky; top:0; z-index:50; background:var(--paper); box-shadow:0 1px 0 var(--line);}
-  .brandrow{display:flex; justify-content:space-between; align-items:center; max-width:var(--maxw); margin:0 auto; padding:0 clamp(24px,5vw,64px);}
+  .brandrow{display:flex; justify-content:space-between; align-items:center; max-width:var(--maxw); margin:0 auto; padding:0 clamp(32px, 6vw, 64px);}
   .brand{font-family:'Fraunces',serif; font-weight:600; font-size:1.05rem;}
   .brand .vs{color:var(--muted); font-weight:400; font-style:italic;}
   .header-actions{display:flex; align-items:center; gap:22px;}
